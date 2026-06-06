@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio León de Juda | Rugidos de Alabanza</title>
+    <meta name="description" content="Escucha Radio León de Juda en vivo. Rugidos de alabanza para las naciones. Conéctate con nosotros a través de WhatsApp, Instagram y correo electrónico.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor"></div>
+    
+    <div class="container">
+        <!-- Header / Logo Area -->
+        <header>
+            <div class="logo-container">
+                <h1 class="main-title">RADIO LEÓN DE JUDA</h1>
+                <p class="slogan">RUGIDOS DE ALABANZA</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Visual & Audio Player Card -->
+            <div class="player-card">
+                <!-- Lion Banner Container -->
+                <div class="lion-banner-container">
+                    <img src="lion_banner.png" alt="León de Juda - Rugidos de Alabanza" class="lion-banner-img">
+                    <div class="live-badge-container">
+                        <span class="live-dot"></span>
+                        <span class="live-text">EN VIVO</span>
+                    </div>
+                </div>
+
+                <!-- Player Details -->
+                <div class="player-info">
+                    <h2 class="stream-title">Señal Online</h2>
+                    <p class="stream-subtitle">Escuchas: Rugidos de Alabanza</p>
+                </div>
+
+                <!-- Custom Visualizer -->
+                <div class="visualizer" id="visualizer">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <!-- Player Controls -->
+                <div class="controls">
+                    <!-- Audio Stream Source -->
+                    <audio id="radio-audio" src="https://stream.zeno.fm/nrf3kkca998uv" preload="none"></audio>
+                    
+                    <!-- Play / Pause Button -->
+                    <button class="play-btn" id="play-pause-btn" aria-label="Reproducir">
+                        <svg class="play-icon" viewBox="0 0 24 24" width="32" height="32" id="svg-play">
+                            <path fill="currentColor" d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon hidden" viewBox="0 0 24 24" width="32" height="32" id="svg-pause">
+                            <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                        </svg>
+                    </button>
+
+                    <!-- Volume Control Area -->
+                    <div class="volume-container">
+                        <button class="volume-btn" id="volume-mute-btn" aria-label="Silenciar">
+                            <svg class="volume-icon" viewBox="0 0 24 24" width="20" height="20" id="svg-volume">
+                                <path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                            </svg>
+                            <svg class="mute-icon hidden" viewBox="0 0 24 24" width="20" height="20" id="svg-mute">
+                                <path fill="currentColor" d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.21.05-.42.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                            </svg>
+                        </button>
+                        <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.05" value="1" aria-label="Controlar volumen">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media & Contact Section -->
+            <div class="connections-card">
+                <h3 class="connections-title">Conéctate con Nosotros</h3>
+                <p class="connections-text">Envía tus peticiones de oración, saludos y comunícate con la radio a través de nuestras redes sociales:</p>
+                
+                <div class="social-links-grid">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/56936454803?text=Hola%20Radio%20Le%C3%B3n%20de%20Juda!%20Les%20escribo%20desde%20la%20p%C3%A1gina%20web..." 
+                       target="_blank" rel="noopener noreferrer" class="social-button whatsapp-btn" id="btn-whatsapp">
+                        <div class="button-icon-wrapper">
+                            <svg class="btn-icon" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 2.01 14.069.99 11.5.99c-5.442 0-9.87 4.372-9.874 9.802-.001 1.77.463 3.5 1.34 5.011l-.995 3.634 3.731-.967zm11.41-5.12c-.318-.16-1.88-.928-2.177-1.036-.297-.109-.512-.162-.729.162-.217.324-.838 1.036-1.027 1.252-.189.217-.378.243-.696.082-.319-.16-1.343-.495-2.559-1.579-.947-.844-1.586-1.887-1.772-2.21-.186-.325-.02-.501.14-.661.144-.144.318-.372.477-.558.16-.186.213-.318.318-.53.106-.213.053-.399-.026-.558-.079-.16-.729-1.751-1-2.404-.264-.635-.533-.55-.729-.56-.19-.01-.407-.012-.624-.012-.217 0-.571.082-.87.408-.297.324-1.134 1.109-1.134 2.705 0 1.597 1.164 3.136 1.326 3.352.162.217 2.292 3.507 5.551 4.911.776.334 1.38.533 1.852.684.779.248 1.489.213 2.052.129.627-.094 1.88-.77 2.144-1.48.265-.71.265-1.321.186-1.48-.079-.16-.297-.265-.615-.425z"/>
+                            </svg>
+                        </div>
+                        <div class="btn-text-container">
+                            <span class="btn-label">Escríbenos al WhatsApp</span>
+                            <span class="btn-value">+569 36454803</span>
+                        </div>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/radioleon_de_juda" 
+                       target="_blank" rel="noopener noreferrer" class="social-button instagram-btn" id="btn-instagram">
+                        <div class="button-icon-wrapper">
+                            <svg class="btn-icon" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </div>
+                        <div class="btn-text-container">
+                            <span class="btn-label">Síguenos en Instagram</span>
+                            <span class="btn-value">@radioleon_de_juda</span>
+                        </div>
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:mrleondejuda1@gmail.com?subject=Contacto%20desde%20Sitio%20Web" class="social-button email-btn" id="btn-email">
+                        <div class="button-icon-wrapper">
+                            <svg class="btn-icon" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <div class="btn-text-container">
+                            <span class="btn-label">Envíanos un Correo</span>
+                            <span class="btn-value">mrleondejuda1@gmail.com</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Radio León de Juda. Todos los derechos reservados.</p>
+            <p class="footer-blurb">Predicando y alabando al León de la Tribu de Judá. Rugiendo para las naciones.</p>
+        </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
